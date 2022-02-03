@@ -22,8 +22,7 @@ endif;
 function dianella_theme_styles() {
 	
 	wp_enqueue_style( 'dianella-theme-style', get_stylesheet_uri() );
-
-		wp_enqueue_style( 'dianella-theme-style' );
+	
 }
 add_action( 'wp_enqueue_scripts', 'dianella_theme_styles' );
 
