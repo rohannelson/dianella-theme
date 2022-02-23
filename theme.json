@@ -105,7 +105,7 @@
                     "name": "System Fonts"
                 },
                 {
-                            "fontFamily": "'Montserrat', sans-serif'",
+                            "fontFamily": "'Montserrat', sans-serif",
                     "slug": "montserrat",
                     "name": "Montserrat"
                 },
@@ -151,7 +151,8 @@
         },
         "spacing": {
             "padding": true,
-                "margin": true,
+            "margin": true,
+            "blockGap": true,
             "units": [ "px", "em", "rem", "vh", "vw" ]
         },
         "layout": {
@@ -160,6 +161,18 @@
         }
     },
     "styles": {
+        "spacing": {
+            "blockGap": "0px"
+        },
+        "blocks": {
+            "core/site-title": {
+                "spacing": {
+                    "margin": {
+                        "top": "0px"
+                    }
+                }
+            }
+        },
         "color": {
             "background":"var(--wp--preset--color--gunmetal)",
             "text":"var(--wp--preset--color--white)"
@@ -187,6 +200,11 @@
             "name": "footer",
             "area": "footer",
             "title": "Footer"
+        },
+        {
+            "name": "cover",
+            "area": "main",
+            "title": "Cover"
         }
     ]
 }
